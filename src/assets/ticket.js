@@ -24,14 +24,11 @@ function Ticket(props) {
             <text
               fill="#74111B"
               fontFamily="ArialMT, Arial"
-              fontSize="25"
+              fontSize="22"
               fontWeight="normal"
             >
               <tspan x="125.749" y="63.696">
                 {props.name}
-              </tspan>
-              <tspan x="125.749" y="92.514">
-                {props.lastname}
               </tspan>
             </text>
             <path

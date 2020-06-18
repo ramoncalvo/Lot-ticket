@@ -6,18 +6,18 @@ const ref = React.createRef();
 
 const users = [
   {
-    name: "Rigoberto ",
-    lastname: "Sanchez Vilchis",
+    name: "Rigoberto Sanchez",
+    lastname: "",
     numero: "5854"
   },
   {
-    name: "Pedro ",
-    lastname: "Sola Almazan",
+    name: "Pedro Sola",
+    lastname: "",
     numero: "9526"
   },
   {
-    name: "Rosa ",
-    lastname: "VillaNueva Esperon",
+    name: "Rosa VillaNueva",
+    lastname: "",
     numero: "84525"
   }
  
