@@ -27,7 +27,7 @@ function Ticket(props) {
               fontSize="22"
               fontWeight="normal"
             >
-              <tspan x="125.749" y="63.696">
+              <tspan x="125.749" y="73.696">
                 {props.name}
               </tspan>
             </text>

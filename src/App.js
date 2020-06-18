@@ -6,17 +6,17 @@ const ref = React.createRef();
 
 const users = [
   {
-    name: "Rigoberto Sanchez",
+    name: "1 Rigoberto Sanchez",
     lastname: "",
     numero: "5854"
   },
   {
-    name: "Pedro Sola",
+    name: "2 Pedro Sola",
     lastname: "",
     numero: "9526"
   },
   {
-    name: "Rosa VillaNueva",
+    name: "3 Rosa VillaNueva",
     lastname: "",
     numero: "84525"
   }
@@ -28,14 +28,31 @@ const options = {
 };
 
 function App() {
-  const [folio, setFolio] = React.useState(0);
+  let [folio, setFolio] = React.useState(0);
+  let suma = 0
 
   function startPdf() {
-    var elem = document.getElementById('generate');
-    let event = new Event("click");
-    console.log('start pdf button')
-        elem.click();
+    
+    // console.log('numero de elementos ', users.length)
+    if(suma < users.length) {
+      var myVar = setInterval(myTimer, 2000);
+      
+      console.log('folio is ', suma)
+    } else {
+      clearInterval(myVar);
+    }
+        
+  }
 
+  function myTimer() {
+    // var elem = document.getElementById('generate');
+    // elem.click();
+    if(suma < users.length) {
+       suma++
+      setFolio( suma )
+      console.log('folio ', suma)
+    }
+   
   }
 
   return (
@@ -50,12 +67,10 @@ function App() {
       </Pdf>
       <div ref={ref}>
 
-        {users.map((user, index) => (
-          <div key={index}>
-            <Boleto name={user.name} numero={user.numero} />
-            
-          </div>
-        ))}
+        { folio < users.length ?
+          <Boleto name={users[folio].name} numero={users[folio].numero} />
+          : 'Se ha terminado'
+        }
       </div>
     </div>
     </div>
