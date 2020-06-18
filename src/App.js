@@ -47,9 +47,10 @@ function App() {
   }
 
   function myTimer() {
-    // var elem = document.getElementById('generate');
-    // elem.click();
+    
     if(suma < users.length) {
+      var elem = document.getElementById('generate');
+      elem.click();
        suma++
       setFolio( suma )
       console.log('folio ', suma)
