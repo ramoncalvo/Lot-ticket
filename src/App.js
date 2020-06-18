@@ -1,20 +1,23 @@
 import React from 'react';
-import Boleto from './assets/boleto';
+import Boleto from './assets/ticket';
 import Pdf from "react-to-pdf";
 import './App.css';
 const ref = React.createRef();
 
 const users = [
   {
-    name: "Rigoberto Sanchez Vilchis",
+    name: "Rigoberto ",
+    lastname: "Sanchez Vilchis",
     numero: "5854"
   },
   {
-    name: "Pedro Sola Almazan",
+    name: "Pedro ",
+    lastname: "Sola Almazan",
     numero: "9526"
   },
   {
-    name: "Rosa VillaNueva Esperon",
+    name: "Rosa ",
+    lastname: "VillaNueva Esperon",
     numero: "84525"
   }
  
