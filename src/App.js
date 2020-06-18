@@ -2,26 +2,28 @@ import React from 'react';
 import Boleto from './assets/ticket';
 import Pdf from "react-to-pdf";
 import './App.css';
+import users from './assets/participantes'
 const ref = React.createRef();
 
-const users = [
-  {
-    name: "1 Rigoberto Sanchez",
-    lastname: "",
-    numero: "5854"
-  },
-  {
-    name: "2 Pedro Sola",
-    lastname: "",
-    numero: "9526"
-  },
-  {
-    name: "3 Rosa VillaNueva",
-    lastname: "",
-    numero: "84525"
-  }
+
+// const users = [
+//   {
+//     name: "1 Rigoberto Sanchez",
+//     lastname: "",
+//     numero: "5854"
+//   },
+//   {
+//     name: "2 Pedro Sola",
+//     lastname: "",
+//     numero: "9526"
+//   },
+//   {
+//     name: "3 Rosa VillaNueva",
+//     lastname: "",
+//     numero: "84525"
+//   }
  
-];
+// ];
 
 const options = {
     orientation: 'landscape'
@@ -35,7 +37,7 @@ function App() {
     
     // console.log('numero de elementos ', users.length)
     if(suma < users.length) {
-      var myVar = setInterval(myTimer, 2000);
+      var myVar = setInterval(myTimer, 3000);
       
       console.log('folio is ', suma)
     } else {
