@@ -1,5 +1,5 @@
 import React from 'react';
-import Boleto from './assets/ticket';
+import Boleto from './assets/boletoPng';
 import Pdf from "react-to-pdf";
 import './App.css';
 import users from './assets/participantes'
@@ -26,7 +26,8 @@ const ref = React.createRef();
 // ];
 
 const options = {
-    orientation: 'landscape'
+    orientation: 'landscape',
+    
 };
 
 function App() {
@@ -64,14 +65,14 @@ function App() {
        <div>
         <button onClick={ () => startPdf() }>Start PDF process</button>
        </div>
-      <Pdf targetRef={ref} options={options} filename={folio + ".pdf"}>
+      <Pdf targetRef={ref} options={options} filename={ 'numero_' +folio + ".pdf"}>
         {({ toPdf }) => <button id="generate" onClick={toPdf}>Generate Pdf</button>}
         
       </Pdf>
-      <div ref={ref}>
+      <div ref={ref} className="boletoWrapped">
 
         { folio < users.length ?
-          <Boleto name={users[folio].name} numero={users[folio].numero} />
+          <Boleto name={users[folio].nombre} numero={users[folio].numero} />
           : 'Se ha terminado'
         }
       </div>

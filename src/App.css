@@ -1,12 +1,12 @@
 .Boleto {
-  border: 1px solid black;
-  border-left: 10px solid black;
+  /* border: 1px solid black;
+  border-left: 10px solid black; */
   padding: 10px;
   padding-left: 50px;
   width: 500px;
   margin: 5px;
-  background-size: cover;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQK3GBMO3qWAINleUAem5yyZAanWlf_d7HBngZIp5FUoLcWRQwa&usqp=CAU');
+  /* background-size: cover;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQK3GBMO3qWAINleUAem5yyZAanWlf_d7HBngZIp5FUoLcWRQwa&usqp=CAU'); */
 }
 
 .Boleto::after {
@@ -19,4 +19,40 @@
 .name {
   border: 1px solid red;
   width: 50%;
+}
+
+.boletoWrapped {
+  position: relative;
+  height: 800px;
+  width: 1070px;
+}
+
+.BoletoPng {
+  height: 100%;
+  width: 100%;
+  background-size: 908px 408px;
+  background-repeat: no-repeat;
+  background-image: url('./assets/Boletos_sorteo.png'); 
+}
+
+.nombre {
+  position: absolute;
+  top: 35.7%;
+  left: 19%;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  width: 320px;
+  /* border: 1px solid green; */
+}
+
+.numero {
+  position: absolute;
+  width: 100px;
+  top: 30.5%;
+  left: 68.5%;
+  font-size: 2.8rem;
+  /* border: 1px solid white; */
+  color: white;
+  text-align: center;
 }

@@ -2,7 +2,9 @@ import React from "react";
 
 function Ticket(props) {
   return (
-    <svg
+    <div className="Boleto">
+
+      <svg
       xmlns="http://www.w3.org/2000/svg"
       width="434"
       height="195"
@@ -828,6 +830,8 @@ function Ticket(props) {
         </g>
       </g>
     </svg>
+
+    </div>
   );
 }
 
