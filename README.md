@@ -1,3 +1,7 @@
+## This project is for fill fast the a lot ticket with a design with name and number of players.
+
+### ------------->
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

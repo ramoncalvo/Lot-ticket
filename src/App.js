@@ -35,25 +35,26 @@ function App() {
   }
 
   return (
-    <div >
+    <div>
       <div className="App">
-
         <div className="ui">
-            <button className="btn" onClick={() => startPdf()}>Generar pds por lote</button>
-          
-            <Pdf
-              targetRef={ref}
-              options={options}
-              filename={"numero_" + folio + ".pdf"}
-            >
-              {({ toPdf }) => (
-                <button id="generate" onClick={toPdf}>
-                  Generar actual pdf
-                </button>
-              )}
-            </Pdf>
-          </div>
-        
+          <button className="btn" onClick={() => startPdf()}>
+            Generar pds por lote
+          </button>
+
+          <Pdf
+            targetRef={ref}
+            options={options}
+            filename={"numero_" + folio + ".pdf"}
+          >
+            {({ toPdf }) => (
+              <button id="generate" onClick={toPdf}>
+                Generar actual pdf
+              </button>
+            )}
+          </Pdf>
+        </div>
+
         <div ref={ref} className="boletoWrapped">
           {folio < users.length ? (
             <Boleto name={users[folio].nombre} numero={users[folio].numero} />
@@ -62,8 +63,6 @@ function App() {
           )}
         </div>
       </div>
-
-      
     </div>
   );
 }

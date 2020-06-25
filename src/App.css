@@ -1,7 +1,5 @@
-
 .ui .btn {
   margin: 5px;
-  
 }
 
 .boletoWrapped {
@@ -16,7 +14,7 @@
   width: 100%;
   background-size: 908px 408px;
   background-repeat: no-repeat;
-  background-image: url('./assets/Boletos_sorteo.png'); 
+  background-image: url("./assets/Boletos_sorteo.png");
 }
 
 .nombre {
